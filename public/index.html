@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style_MD.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>MD-system</title>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-header">
+      <div class="nav-title">
+        <div class="vertical-bar"></div>
+        Logo
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    <input type="checkbox" id="nav-check">
+    <div class="nav-links">
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#servicos" >Serviços</a>
+      <a href="" >Contato</a>
+    </div>
+  </nav>
+
+  <div class="quem_somos">
+    <h2 id="title_quem_somos">Olá, nós somos a Mdsystem web!</h2>
+    <p id="text_inicio">Damos vida ao seus negócios digitais</p>
+  </div>
+
+  <h3 id="title_sobre"  >SOBRE NÓS</h3>
+  
+  <div class="horizontal-bar" id="sobre"></div>
+
+  <nav class="nav_tabs">
+    <ul>
+        <li>
+            <input type="radio" name="tabs" class="malw_tabs" checked id="radio1">
+            <label for="radio1">Missão</label>
+            <div class="tabContent">
+                <article id="tab1Content">
+                  
+                </article>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="tabs" class="malw_tabs" id="radio2">
+            <label for="radio2">Visão</label>
+            <div class="tabContent">
+                <article id="tab2Content">
+                 
+                </article>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="tabs" class="malw_tabs" id="radio3">
+            <label for="radio3">Valores</label>
+            <div class="tabContent">
+                <article id="tab3Content">
+                    
+                </article>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+  
+  
+  <h3 id="title_servicos" >Serviços</h3>
+  
+  <div class="horizontal-barS" id="servicos"></div>
+
+
+
+<!-- HTML -->
+<div class="slideshow-container">
+  <!-- Slides will be dynamically added here -->
+</div>
+
+<a class="prev" onclick="plusSlides(0)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,453 @@
+* {
+    box-sizing: border-box;
+  } html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'Poppins';
+  }
+  
+  .nav {
+    height: 80px;
+    width: 100%;
+    background-color: #292d35;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 20px;
+    margin-top: 1%;
+    margin-right: 12.5%;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    color: #ff0000;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }.nav-title{
+    margin-left: 12%;
+    margin-top: 1%;
+  }.vertical-bar {
+    width: 8.5px; /* Ajuste a largura conforme necessário */
+    height: 20px; /* Ajuste a altura conforme necessário */
+    background-color: #ff0000;
+    margin-right: 0px; /* Espaçamento entre a barra e o texto */
+    display: inline-block;
+  }
+  .horizontal-bar {
+    width: 60px; /* Ajuste a largura conforme necessário */
+    height: 6px; /* Ajuste a altura conforme necessário */
+    background-color: #ff0000;
+    margin: 0 auto; 
+    margin-top:     1%;
+    margin-bottom: -3.5%;/* Isso centralizará horizontalmente a barra */
+  }
+  .horizontal-barS {
+    width: 60px; /* Ajuste a largura conforme necessário */
+    height: 6px; /* Ajuste a altura conforme necessário */
+    background-color: #ff0000;
+    margin: 0 auto; 
+    margin-top:     1%;
+    margin-bottom: 3.5%;/* Isso centralizará horizontalmente a barra */
+    margin-bottom: 8%;
+  }
+  
+  #title_sobre{
+    text-align: center;
+    margin-top: 6%;
+  } #title_servicos{
+    text-align: center;
+    margin-top: 12%;
+   
+   
+  } .quem_somos {
+    background-color: #000000;
+    color: #ffffff;
+ 
+    height: 450px;
+    width: 100%;
+    max-height: 500px;
+  /* Defina um valor adequado para o z-index */
+  }
+  #title_quem_somos{
+    text-align: center;
+    font-size: 36px;
+    padding-top: 15%;
+    margin-bottom: -1%;
+    margin-top: -4%;
+   
+  }#text_inicio{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 1%;
+  }
+  
+/* ======================== menu responsivo  ==========================*/
+
+/* Estilos para o botão do menu mobile */
+@media (max-width:768px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 1%;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+
+  /* Estilos para a lista de links do menu mobile */
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+
+  /* Esconder a lista de links quando o botão não está marcado */
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+
+  /* Mostrar a lista de links quando o botão está marcado */
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+
+/* Estilos adicionais para o título do menu */
+.nav-title {
+  margin-left: 4%;
+  margin-top: 1%;
+}
+
+/* Estilos para o contêiner do menu */
+.nav {
+  height: 60px;
+  width: 100%;
+  background-color: #363535;
+  position: relative;
+}
+
+/* Estilos adicionais para o botão do menu mobile */
+.nav-btn {
+  margin-top: 2%;
+  margin-right: 5%;
+}
+
+  .horizontal-bar {
+    width: 50px; /* Ajuste a largura conforme necessário */
+    height: 5px; /* Ajuste a altura conforme necessário */
+    background-color: #ff0000;
+    margin: 0 auto; 
+    margin-top: 2%;/* Isso centralizará horizontalmente a barra */
+  }  .horizontal-barS {
+    width: 60px; /* Ajuste a largura conforme necessário */
+    height: 6px; /* Ajuste a altura conforme necessário */
+    background-color: #ff0000;
+    margin: 0 auto; 
+    margin-top:     2%;
+    margin-bottom: 3.5%;/* Isso centralizará horizontalmente a barra */
+    margin-bottom: 35%;
+  }#title_sobre{
+    text-align: center;
+    margin-top: 17%;
+    font-size: 16px;
+  }  #title_quem_somos{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 15%;
+    margin-bottom: -1%;
+    margin-top: -4%;
+   
+  }#text_inicio{
+    text-align: center;
+    font-size: 16px;
+  } #title_servicos{
+    text-align: center;
+    margin-top: 42%;
+    font-size: 16px;
+   
+  }
+  }
+
+  /*------------===================  sobre ========================------*/
+  * {
+	margin:0;
+	padding: 0;
+}
+  ul {
+	list-style: none;
+}
+	.nav_tabs {
+		width: 65%;
+		height:170px;
+		margin: 100px auto;
+		background: #827b7b;
+		position: relative;
+        margin-bottom: 10%;
+        top: -3%;
+	}
+
+	.nav_tabs ul li {
+		float: left;
+	}
+	.nav_tabs label {
+		width: 100%;   
+		padding: 20px 40px;
+		background: #827b7b;
+		display: block;
+		color: #fff;
+		cursor: pointer;
+		text-align: center;
+	}
+.malw_tabs:checked ~ label {
+	background: #2e3f47;
+}
+.malw_tabs{
+	display: none;
+}
+.tabContent {
+
+	background: #2e3f47 ;
+	position: absolute;
+	width: 100%;
+	height:170px;
+	left: 0;
+	display: none;
+    color: #fff;
+}
+.malw_tabs:checked ~ .tabContent {
+	display: block;
+}
+.tabContent article {
+	padding: 10px;
+    margin-left: 3.5%;
+}
+
+/* Fim da box com Abas */
+@media (max-width:768px) {
+    .nav_tabs {
+		width: 100%;
+		
+	}.tabContent article {
+        padding: 20px;
+    }.nav_tabs label {
+		width: 100%;   
+		padding: 20px 40px;
+		background: #827b7b;
+		display: block;
+		color: #fff;
+		cursor: pointer;
+		text-align: center;
+	}}
+    @media (max-width:468px) {
+        .nav_tabs {
+            width: 100%;
+            
+        }.tabContent article {
+            padding: 20px;
+        }.nav_tabs label {
+            width: 100%;   
+            padding: 20px 20px;
+            background: #827b7b;
+            display: block;
+            color: #fff;
+            cursor: pointer;
+            text-align: center;
+        }}
+
+
+/*====================================Servicos========================================*/
+
+
+.slideshow-container {
+  position: relative; /* Change to relative to make the navigation icons position relative to this container */
+  background: #262525;
+  color: #ffffff;
+  margin-bottom: 0%;
+ 
+}
+
+/* Slides */
+.mySlides {
+  width: 80%;
+  display: none;
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+
+/* Previous & Next buttons */
+.prev, .next {
+  position: absolute;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 3px;
+  user-select: none;
+  z-index: 1;
+  color: #ffffff;
+  margin-top: -80px;
+}
+
+/* Position the "prev" button to the left */
+.prev {
+  left: 40px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next" button to the right */
+.next {
+  right: 40px;
+  border-radius: 0 3px 3px 0;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+  color:  #f6ff00;
+  float: left;
+  margin-right: -1.6px;
+  font-size: 18px;
+
+}
+
+@media (max-width:768px) {
+  .mySlides {
+    width: 80%;
+    display: none;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    font-size: 12px;
+    
+  }.prev {
+    left: 0px;
+    border-radius: 3px 0 0 3px;
+  }.author {
+    color:  #f6ff00;
+    float: left;
+    margin-right: -2px;
+    font-size: 13px;
+  
+  }
+  
+  /* Position the "next" button to the right */
+  .next {
+    right: 0px;
+    border-radius: 0 3px 3px 0;
+  }
+  .prev, .next {
+    position: absolute;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 3px;
+    user-select: none;
+    z-index: 1;
+    color: #ffffff;
+    margin-top: -65px;
+  }
+ }
+ @media (max-width:468px) {
+  .prev, .next {
+    position: absolute;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 3px;
+    user-select: none;
+    z-index: 1;
+    color: #ffffff;
+    margin-top: -85px;
+  }}
